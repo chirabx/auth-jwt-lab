@@ -6,5 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     allowedHosts: ['auth.chirabx.xyz'],
+    https: true,
+    origin: 'https://auth.chirabx.xyz',
   },
 })

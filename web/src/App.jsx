@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-const API = "http://localhost:3001";
+const API =
+  import.meta.env.VITE_API_BASE_URL ||
+  (typeof window !== "undefined" ? window.location.origin : "");
 
 export default function App() {
   const [me, setMe] = useState(null);
